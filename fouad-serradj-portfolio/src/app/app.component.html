@@ -1,0 +1,36 @@
+
+  <nav class="navbar navbar-expand-lg bg-topBar-custom">
+    <div class="container upper-header">
+        <a class="navbar-brand" routerLink="/home">
+            <img src="assets/images/Logo-fouad2.png" alt="Fouad Serradj">
+        </a>
+        <div class="d-flex">
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+          <li class="nav-item">
+            <a class="nav-link home-link main-link" routerLink="/home" routerLinkActive="active">HOME</a>
+          </li>
+          <li class="nav-item ms-5">
+            <a class="nav-link fm-service-link main-link" routerLink="/work-projects" routerLinkActive="active">WORK PROJECTS</a>
+          </li>
+          <li class="nav-item ms-5">
+            <a class="nav-link onboarding-link main-link" routerLink="/academic-projects" routerLinkActive="active">ACADEMIC PROJECTS</a>
+          </li>
+          <li class="nav-item ms-5">
+            <a class="nav-link dashboards-link main-link" routerLink="/skills" routerLinkActive="active">TECH. SKILLS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<router-outlet></router-outlet>

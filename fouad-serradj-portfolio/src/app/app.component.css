@@ -1,0 +1,93 @@
+html, body {
+    font-family: "Helvetica Neue" ,Helvetica,Arial,sans-serif;
+}
+
+
+.icon-x2{
+    font-size: 2.4rem;
+}
+.icon-x3{
+    font-size: 3rem;
+}
+
+.icon-secondary{
+    color: #4f4f4f;
+}
+
+.shortcut {
+    border: none;
+    padding-left: 25px;
+    padding-right: 0px;
+    border-radius: 30px;
+    margin-left: 10px
+}
+
+.shortcut-search {
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    border-radius: 30px;
+    margin-left: 10px
+}
+
+@supports (-moz-appearance:none) {
+    a.shortcut.active {
+        padding-top: 25px;
+        padding-bottom: 10px;
+        background-color: #e5e2e3;
+    }
+}
+
+a.shortcut.active {
+    background-color: #e5e2e3;
+}
+
+a.shortcut-search.active {
+    background-color: #ededed;
+}
+
+.main-link {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.main-link.active {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+/*Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+@media (max-width: 575.98px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+@media (max-width: 767.98px) {  }
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+@media (max-width: 991.98px) { 
+    .upper-header{
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+ }
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .upper-header{
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+ }
+@media (max-width: 1199.98px) {  }
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
+@media (max-width: 1399.98px) {  }

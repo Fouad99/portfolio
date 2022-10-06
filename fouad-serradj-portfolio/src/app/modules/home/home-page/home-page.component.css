@@ -1,0 +1,99 @@
+.consult-btns{
+    outline-color: #F0F0F0;
+  }
+  
+  .card {
+    height: 100%;
+  }
+  
+  .card-bg{
+    background-color: #f0f0f0;
+    color:#000;
+  }
+  
+  .container-section {
+      background: #F0F0F0;
+      border-radius: 20px;
+      padding: 50px 0px 0px 50px;
+  }
+  .bg-topBar-custom {
+      background-color: #FFFFFF;
+  }
+  .bg-mainBar-custom {
+      background-color: #4F4F4F;
+  }
+  
+  .mainBar-text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+  }
+  
+  .nav-light .nav-bar .nav-link {
+      color: #FFFFFF;
+  }
+  
+  .homeSection {
+      padding-top: var(--homeSection-padding-y);
+      padding-bottom: var(--homeSection-padding-y);
+      margin-bottom: 0;
+      background-color:#FFFFFF;
+  }
+  @media (min-width: 768px) {
+      .homeSection {
+          padding-top: calc(var(--homeSection-padding-y) * 2);
+          padding-bottom: calc(var(--homeSection-padding-y) * 2);
+      }
+  }
+  
+  .homeSection p:last-child {
+      margin-bottom: 0;
+  }
+  
+  .homeSectionHeading {
+      font-weight: 700;
+      font-size: 40px;
+  }
+  
+  .footer {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+  }
+  
+  .footer p {
+      margin-bottom: .25rem;
+  }
+  
+  .box-shadow {
+      box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  }
+
+  .what-i-do {
+    font-weight: 700;
+    color: #4F4F4F;
+  }
+
+  .what-i-do-text {
+    color: #8f8f8f;
+    font-weight: 500;
+  }
+
+  .no-style-link {
+    text-decoration: underline;
+    color: inherit;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  .contact-section{
+    background-color: #495057;
+    color: #F0F0F0;
+    padding: 50px;
+  }
+
+  .contact-title {
+    font-weight: 900;
+    font-family:'Times New Roman', Times, serif;
+    
+
+  }
