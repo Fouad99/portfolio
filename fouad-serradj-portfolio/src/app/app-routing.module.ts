@@ -7,7 +7,8 @@ const appRoutes: Routes = [
   {path: 'work-projects', loadChildren: () => import('./modules/work-projects/work-projects.module').then(m => m.WorkProjectsModule)},
   {path: 'academic-projects', loadChildren: () => import('./modules/academic-projects/academic-projects.module').then(m => m.AcademicProjectsModule)},
   {path: 'skills', loadChildren: () => import('./modules/skills/skills.module').then(m => m.SkillsModule)},
-  {path: '', redirectTo: 'home', pathMatch: 'full'}
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ]
 
 @NgModule({

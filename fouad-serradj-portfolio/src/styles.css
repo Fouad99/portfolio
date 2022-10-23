@@ -1,3 +1,49 @@
-body{
-    overflow-x: hidden;
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+.subHeaderMenu {
+    margin-bottom: 2%;
+}
+
+.btn-primary {
+  background-color: #912338 !important;
+  border-color: #912338 !important;
+}
+
+.btn-secondary{
+  background-color:#2c2c2c !important;
+  border-color: #2c2c2c !important;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  overflow-x: hidden;
+
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+  outline:none;
+  box-shadow:none;
+}
+
+.pi-check-circle{
+  color: green;
+  font-weight: bolder;
+}
+
+.pi-times-circle{
+  color: red;
+  font-weight: bolder;
 }
