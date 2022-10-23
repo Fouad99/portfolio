@@ -8,6 +8,8 @@ import { PmoComponent } from './pmo/pmo.component';
 import { IgComponent } from './ig/ig.component';
 import { BnederComponent } from './bneder/bneder.component';
 
+import { TabViewModule } from 'primeng/tabview';
+
 
 
 @NgModule({

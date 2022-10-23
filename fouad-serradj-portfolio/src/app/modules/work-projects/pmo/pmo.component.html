@@ -11,12 +11,34 @@
                     <p-tabView>
                         <p-tabPanel header="Description">
                             <div class="row mt-2">
-                                <p>The <b>FM Central</b> is an intranet plateform designed to manage construction project data and business dashboards of the Facilities management department of the university of Concordia.</p>
+                                <div class="col col-sm-9 col-md-9 col-lg-9">
+                                    <p>
+                                        <b>FM Central</b> is solution to normalize and standardize the way data is entered and managed. It aims to build an authoritative source of data. Through this central interface, 
+                                        professionals will be able to collect, enter and update data in a coordinated and  
+                                        standardized way. 
+                                        To  ensure  data  uniformity, several layers of data validation are implemented 
+                                        based  on Concordia  University  and  Facilities  Management business rules and governance.
+                                    </p>
+                                </div>
                             </div>
                         </p-tabPanel>
                         <p-tabPanel header="Architecture">
                             <div class="row mt-2">
-                                <p>The <b>FM Central</b> software is a distributed system that contains 3 developed API's and consume Microsoft Azure API's for the authentication service and the <b>Power BI service</b> </p>
+                                <div class="col col-sm-9 col-md-9 col-lg-9">
+                                    <p>
+                                        The <b>FM Central</b> is based on a decoupled architecture. 
+                                        Frontend code is separated from the backend code. The frontend and backend code communicate, but have their own server instances. 
+                                        The backend application serves data via an API in a JSON format, as part of a headless set-up.
+                                        A decoupled architecture makes it easy to build flexibility and integrate other services that consume such API's like PowerBI.
+                                        it also allows to make rapid changes, and scale individual services and components independently without disrupting the entire application.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <h6 class="text-header">Illustration of the architecture</h6>
+                                <div>
+                                    <img src="assets/images/arch.png" alt="FM central architecture"  />
+                                </div>
                             </div>
                         </p-tabPanel>
                         <p-tabPanel header="Technological Stack">
