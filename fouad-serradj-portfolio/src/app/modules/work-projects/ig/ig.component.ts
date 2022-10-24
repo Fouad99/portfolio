@@ -7,11 +7,16 @@ import { NavigationService } from 'src/app/service/navigation.service';
   styleUrls: ['./ig.component.css']
 })
 export class IgComponent implements OnInit {
+  activeState : boolean[] = [false, false, false, false];
 
   constructor(private navigationService: NavigationService) { }
 
   ngOnInit(): void {
     this.navigationService.updateHighlightedNavbarOption();
+  }
+
+  toggle(index: number){
+    this.activeState[index]  = !this.activeState[index];
   }
 
 }

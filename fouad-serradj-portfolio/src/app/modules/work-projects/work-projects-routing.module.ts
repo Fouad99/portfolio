@@ -4,13 +4,14 @@ import {HomeComponent} from '../work-projects/home/home.component'
 import { PmoComponent } from './pmo/pmo.component';
 import { IgComponent } from './ig/ig.component';
 import { BnederComponent } from './bneder/bneder.component';
-
+import { LeadComponent } from './lead/lead.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'pmo-concordia', component: PmoComponent},
   {path: 'ig-rogers', component: IgComponent},
   {path: 'sig-bneder', component: BnederComponent},
+  {path: 'lead', component: LeadComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 

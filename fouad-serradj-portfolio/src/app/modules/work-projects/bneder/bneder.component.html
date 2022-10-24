@@ -3,7 +3,7 @@
     <div id="content">
         <div class="container-fluid">
             <div class="row">
-                <h2 class="text-header">Project list management</h2>
+                <h2 class="text-header">GIS 52 Biskra</h2>
             </div>
             
             <div class="row mt-3 mb-3">
@@ -11,17 +11,51 @@
                     <p-tabView>
                         <p-tabPanel header="Description">
                             <div class="row mt-2">
-                                lol
+                                <div class="col col-sm-9 col-md-9 col-lg-9">
+                                    <p>
+                                        A software that manages geographic information system (GIS) of the Wilaya of Biskra in Algeria. The GIS are first
+                                        developped by either MapInfo or ESRI softwares, and then embedded in a GIS software that we implement. 
+                                        The software allows its users
+                                        browse the maps of the GIS and perform research queries. It also allows CRUD operations on its database.
+                                    </p>
+                                </div>
                             </div>
                         </p-tabPanel>
                         <p-tabPanel header="Architecture">
                             <div class="row mt-2">
-                                lol2
+                                <div class="col col-sm-9 col-md-9 col-lg-9">
+                                    <p>
+                                        The <b>GIS-52-Biskra</b> software is based on a desktop application architecture that runs on Windows operating systems. Itself is composed of several dependent modules.
+                                    </p>
+                                </div>
                             </div>
                         </p-tabPanel>
                         <p-tabPanel header="Technological Stack">
                             <div class="row mt-2">
-                                lol3
+
+                                <div class="py-3">
+                                    <p-button [icon]="activeState[0] ? 'pi pi-minus' : 'pi pi-plus'" (click)="toggle(0)" styleClass="p-button-text" label="Database"></p-button>
+                                    <p-button [icon]="activeState[1] ? 'pi pi-minus' : 'pi pi-plus'" (click)="toggle(1)" styleClass="p-button-text ml-2" label="Application"></p-button>
+                                </div>
+                                        
+                                <p-accordion>
+                                    <p-accordionTab header="Database" [(selected)]="activeState[0]">
+                                        <ul class="mt-3">
+                                            <li class="mb-3">RDMS : <b>MS SQL</b></li>
+                                            <li class="mb-3">Query language : <b>SQL</b></li>
+                                        </ul>
+                                    </p-accordionTab>
+                                    <p-accordionTab header="Application" [(selected)]="activeState[1]">
+                                        <ul class="mt-3">
+                                            <li>Language : 
+                                                <ul class="mt-3">
+                                                    <li class="mb-3"><b>Delphi Borland</b></li>
+                                                    <li class="mb-3"><b>Visual Basic Application</b></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p-accordionTab>
+                                </p-accordion>
                             </div>
                         </p-tabPanel>
                     </p-tabView>
