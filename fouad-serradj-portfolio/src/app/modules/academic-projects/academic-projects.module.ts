@@ -14,6 +14,10 @@ import { TallyComponent } from './tally/tally.component';
 import { GenerateurCarteIsometriquesComponent } from './generateur-carte-isometriques/generateur-carte-isometriques.component';
 
 import {TabViewModule} from 'primeng/tabview';
+import {AccordionModule} from 'primeng/accordion';
+import {ButtonModule} from 'primeng/button';
+import { BloodComponent } from './blood/blood.component';
+import { TextRecognitionComponent } from './text-recognition/text-recognition.component';
 
 
 
@@ -28,12 +32,16 @@ import {TabViewModule} from 'primeng/tabview';
     StockManagementComponent,
     AlcatrazComponent,
     TallyComponent,
-    GenerateurCarteIsometriquesComponent
+    GenerateurCarteIsometriquesComponent,
+    BloodComponent,
+    TextRecognitionComponent
   ],
   imports: [
     CommonModule,
     AcademicProjectsRoutingModule,
-    TabViewModule
+    TabViewModule,
+    AccordionModule,
+    ButtonModule
   ]
 })
 export class AcademicProjectsModule { }

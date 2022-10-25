@@ -5,6 +5,11 @@ import { SkillsRoutingModule } from './skills-routing.module';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
+import { TabViewModule } from 'primeng/tabview';
+import { AccordionModule } from 'primeng/accordion';
+import {ButtonModule} from 'primeng/button';
+
+
 
 @NgModule({
   declarations: [
@@ -13,7 +18,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   ],
   imports: [
     CommonModule,
-    SkillsRoutingModule
+    SkillsRoutingModule,
+    TabViewModule,
+    AccordionModule,
+    ButtonModule
   ]
 })
 export class SkillsModule { }

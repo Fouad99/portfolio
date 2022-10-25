@@ -7,11 +7,16 @@ import { NavigationService } from 'src/app/service/navigation.service';
   styleUrls: ['./stock-management.component.css']
 })
 export class StockManagementComponent implements OnInit {
+  activeState: boolean[] = [false, false,]
 
   constructor(private navigationService: NavigationService) { }
 
   ngOnInit(): void {
     this.navigationService.updateHighlightedNavbarOption();
+  }
+
+  toggle(index: number){
+    this.activeState[index] = !this.activeState[index];
   }
 
 }

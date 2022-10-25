@@ -9,7 +9,8 @@ import { SharifyComponent } from './sharify/sharify.component';
 import { StockManagementComponent } from './stock-management/stock-management.component';
 import { TallyComponent } from './tally/tally.component';
 import { ZipsLawComponent } from './zips-law/zips-law.component';
-
+import { BloodComponent } from './blood/blood.component';
+import { TextRecognitionComponent } from './text-recognition/text-recognition.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -21,6 +22,8 @@ const routes: Routes = [
   {path: 'stock-management', component: StockManagementComponent},
   {path: 'tally', component: TallyComponent},
   {path: 'zips-law', component: ZipsLawComponent},
+  {path: 'bloodIdentification', component: BloodComponent},
+  {path: 'textRecognition', component: TextRecognitionComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 

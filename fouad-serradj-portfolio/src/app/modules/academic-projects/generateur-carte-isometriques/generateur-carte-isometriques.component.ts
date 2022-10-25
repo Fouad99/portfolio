@@ -7,11 +7,16 @@ import { NavigationService } from 'src/app/service/navigation.service';
   styleUrls: ['./generateur-carte-isometriques.component.css']
 })
 export class GenerateurCarteIsometriquesComponent implements OnInit {
+  activeState: boolean[] = [false, false];
 
   constructor(private navigationServce: NavigationService) { }
 
   ngOnInit(): void {
     this.navigationServce.updateHighlightedNavbarOption();
+  }
+
+  toggle(index: number){
+    this.activeState[index] = !this.activeState[index];
   }
 
 }

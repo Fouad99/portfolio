@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from 'src/app/service/navigation.service';
 
 @Component({
   selector: 'app-home-page',
@@ -7,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private navigationService: NavigationService) { }
 
   scroll(element : HTMLElement){
     element.scrollIntoView({behavior: 'smooth'});
   }
 
   ngOnInit(): void {
+    this.navigationService.updateHighlightedNavbarOption();
+
   }
 
 }

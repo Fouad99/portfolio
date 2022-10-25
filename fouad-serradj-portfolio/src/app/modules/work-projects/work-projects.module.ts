@@ -10,8 +10,8 @@ import { IgComponent } from './ig/ig.component';
 import { BnederComponent } from './bneder/bneder.component';
 
 import { TabViewModule } from 'primeng/tabview';
-import {AccordionModule} from 'primeng/accordion';
-import {ButtonModule} from 'primeng/button';
+import { AccordionModule } from 'primeng/accordion';
+import { ButtonModule } from 'primeng/button';
 import { LeadComponent } from './lead/lead.component';
 
 

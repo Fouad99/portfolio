@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from 'src/app/service/navigation.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  activeState : boolean[] = [false, false, false];
+
+  constructor(private navigationService: NavigationService) { }
 
   ngOnInit(): void {
+    this.navigationService.updateHighlightedNavbarOption();
+
+  }
+
+  toggle(index: number){
+    this.activeState[index] = !this.activeState[index];
   }
 
 }
